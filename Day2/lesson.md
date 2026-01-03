@@ -39,6 +39,7 @@ spec:
   containers:
   - name: stress
     image: polinux/stress
+    command: ["stress"]
     args: ["--cpu", "2"]
     resources:
       requests:
@@ -105,6 +106,7 @@ spec:
   containers:
   - name: stress
     image: polinux/stress
+    command: ["stress"]
     args: ["--vm", "1", "--vm-bytes", "300M"]
     resources:
       requests:
